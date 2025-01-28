@@ -30,11 +30,11 @@ class MovingTarget(Target.Target):
         if self.shrink:
             self.radius -= random.uniform(0.1, 0.5)
 
-        if self.radius > self.max_radius:  # Example max radius
+        if self.radius > self.max_radius:  
             self.grow = False
             self.shrink = True
 
-        if self.radius < self.min_radius:  # Example min radius
+        if self.radius < self.min_radius:  
             self.grow = True
             self.shrink = False
         
